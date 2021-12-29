@@ -16,6 +16,7 @@ function CollectionImage (props) {
     getDownloadURL(fileref).then((url) => {
       setURL(url);
     });
+    console.log("hi there");
   } ,[document]);
   console.log(document);
   return (
