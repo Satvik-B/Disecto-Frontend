@@ -25,8 +25,8 @@ function MainRouter() {
       >
         <Routes>
           <Route path="/newCollection" element={<UploadCollection />} />
-          <Route path="/" element={<HomePage />} />
           <Route path="/collection" element={<Collection />} />
+          <Route path="/" element={<HomePage />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>
