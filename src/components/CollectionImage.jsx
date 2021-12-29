@@ -10,8 +10,8 @@ function CollectionImage (props) {
   const { sx, document, docId, ...other } = props;
   console.log(docId);
   const [url1, setURL] = React.useState(null);
-  const fileref = ref(projectStorage, document);
   React.useEffect(() => {
+    const fileref = ref(projectStorage, document);
     console.log('getting_data');
     getDownloadURL(fileref).then((url) => {
       setURL(url);
